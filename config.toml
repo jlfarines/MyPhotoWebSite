@@ -1,37 +1,56 @@
-baseurl = "https://jlf.netlify.com/"
-title = "Mainroad"
+baseurl = "jlf.netlify.app"
 languageCode = "en-us"
-paginate = "10" # Number of posts per page
-theme = "mainroad"
-#theme = "hugo-theme-hello-friend"
+theme = "hugo-theme-hello-friend"
+paginate = 5
+lastModDisplay = "Modified:"
 
-disqusShortname = "" # Enable comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+[params]
+  # dir name of your blog content (default is `content/post`)
+  contentTypeName = "post"
+   # "light" or "dark"
+  defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
 
-[Author]
-  name = "John Doe"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
-  avatar = "img/avatar.png"
 
-[Params]
-  description = "John Doe's Personal blog about everything" # Description of your site
-  opengraph = true
-  twitter_cards = false
-  readmore = false # Show "Read more" button in list if true
-  authorbox = true
-  pager = true
-  post_meta = ["date", "categories"] # Order of post meta information
 
-[Params.logo]
-  subtitle = "Just another site" # Logo subtitle
+[languages]
+  [languages.en]
+    title = "JLF Photography"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
 
-[Params.sidebar]
-  home = "right"   # Configure layout for home page
-  list = "right"   # Configure layout for list pages
-  single = "right" # Configure layout for single pages
-  # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist"]
+    [languages.en.params.logo]
+      logoText = "JLF Photography"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
 
-[Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+#    [languages.en.menu]
+#      [[languages.en.menu.main]]
+#        identifier = "about"
+#        name = "About Me"
+#        url = "/about"
+#      [[languages.en.menu.main]]
+#        identifier = "porfolio"
+#        name = "My Portfolio"
+#        url = "/portfolio"
+#      [[languages.en.menu.main]]
+#        identifier = "archive"
+#        name = "The Archive"
+#        url = "/archive"
+
