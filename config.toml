@@ -1,4 +1,4 @@
-baseurl = "jlf.netlify.app"
+baseurl = "https://jlf.netlify.com"
 languageCode = "en-us"
 theme = "hugo-theme-hello-friend"
 paginate = 5
