@@ -1,4 +1,4 @@
-baseurl = "https://jlf.netlify.com/"
+baseurl = "https://farines-photo.com/"
 title = "Mainroad"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
